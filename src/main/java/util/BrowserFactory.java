@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import pages.HomePage;
 
 import java.io.File;
@@ -59,8 +60,8 @@ public class BrowserFactory {
             driver = chrome;
         }
         if (browserType.equalsIgnoreCase("ie") && ie == null) {
-            System.setProperty("webdriver.edge.driver", System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\MicrosoftWebDriver.exe");
-            driver = new EdgeDriver();
+            System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "\\src\\main\\java\\drivers\\IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
             ie = driver;
         } else if (browserType.equalsIgnoreCase("ie") && ie != null) {
             driver = ie;
