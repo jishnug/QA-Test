@@ -106,14 +106,14 @@ formatter.match({
   "location": "Contact_Us_Step_def.i_am_on(String)"
 });
 formatter.result({
-  "duration": 11120881864,
+  "duration": 8200837800,
   "status": "passed"
 });
 formatter.match({
   "location": "Contact_Us_Step_def.i_click_on_Contact_tab_on_menu()"
 });
 formatter.result({
-  "duration": 373028687,
+  "duration": 211318599,
   "status": "passed"
 });
 formatter.match({
@@ -134,7 +134,7 @@ formatter.match({
   "location": "Contact_Us_Step_def.i_should_be_able_to_contact_QAWorks_by_entering_and(String,String,String)"
 });
 formatter.result({
-  "duration": 2950331176,
+  "duration": 2587784494,
   "status": "passed"
 });
 });
